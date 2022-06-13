@@ -11,13 +11,13 @@
         #errEmail{
             font-size: 12px;
             color: rgb(223, 67, 10);
-            height: 25px;
+            height: 20px;
             display: block;
         }
         #errPassword{
             font-size: 12px;
             color: rgb(223, 67, 10);
-            height: 25px;
+            height: 20px;
             display: block;
         }
     </style>
@@ -30,19 +30,19 @@
                 <img class="img-fluid w-100" src="images/login.jpg" alt="">
             </div>
             <div class="col-lg-6">
-                <h1>Log in</h1>
+                <h1 class="mb-3">Log in</h1>
                 <form action="index.html" method="POST">
-                    <div class="mb-3">
+                    <div class="">
                         <label for="userEmail" class="form-label">Email address</label>
                         <input type="email" name="userEmailuserPassword" class="form-control" id="userEmail" aria-describedby="emailHelp">
                         <span id="errEmail"></span>
                     </div>
-                    <div class="mb-3">
+                    <div class="">
                         <label for="userPassword" class="form-label">Password</label>
                         <input type="password" name="userPassword" class="form-control" id="userPassword">
                         <span id="errPassword"></span>
                     </div>
-                    <button id="log-in" type="" class="btn btn-primary">Submit</button>
+                    <button id="log-in" type="" class="btn btn-primary">Log in</button>
                 </form>
             </div>
         </div>

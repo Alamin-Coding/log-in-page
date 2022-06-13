@@ -20,9 +20,9 @@ login.onclick = ()=>{
          if ((userEmail.value == sessionStorage.getItem('username')) && (userPassword.value == sessionStorage.getItem('password')))
 
           {
-              form.onsubmit = ()=>{return 1;}
-              document.cookie = "username="+userEmail.value;
-              document.cookie = "password="+userPassword.value;
+              form.onsubmit = ()=>{return true;}
+            //   document.cookie = "username="+userEmail.value;
+            //   document.cookie = "password="+userPassword.value;
           }
 
           else
@@ -38,9 +38,9 @@ login.onclick = ()=>{
               if ((userPassword.value != sessionStorage.getItem('password')) )
 
               {
-                errPassword.textContent = "Password NOT match";
+                  errPassword.textContent = "Password NOT match";
                 setTimeout(()=>{
-                    errPassword.textContent = "";
+                    userPassword.textContent = "";
                 }, 2000);
               }
           }
